@@ -122,6 +122,7 @@ public class FilePickerPlugin implements MethodCallHandler {
           startFileExplorer(fileType);
           return true;
         }
+        result.error(TAG, "权限拒绝,请检查." ,null);
         return false;
       }
     });
